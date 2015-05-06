@@ -1,0 +1,14 @@
+CQueue
+======
+
+Description
+-----------
+CQueue is an efficient and portable implementation in C of a queue
+backed by a resizable circular buffer.
+
+Usage
+-----
+To create a new queue, use `cqueue_new` or `cqueue_sized_new`.
+To add elements to a queue, use `cqueue_push`.
+To take elements from the queue, use `cqueue_pop`.
+...
