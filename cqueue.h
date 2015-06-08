@@ -11,12 +11,7 @@
 #include <stdbool.h>
 
 typedef void* CPointer;
-typedef struct {
-  CPointer*     data;
-  unsigned int  data_size;
-  unsigned int  back;
-  unsigned int  front;
-} CQueue;
+typedef struct _CQueue CQueue;
 
 CQueue*         cqueue_new          ();
 CQueue*         cqueue_sized_new    ( unsigned int reserved_size );

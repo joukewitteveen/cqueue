@@ -4,6 +4,13 @@
 
 #define MIN_CAPACITY ( 1 << 2 )
 
+struct _CQueue {
+  CPointer*     data;
+  unsigned int  data_size;
+  unsigned int  back;
+  unsigned int  front;
+};
+
 /*
  * The first power of 2 greater than num, or num if such power does not fit in
  * an unsigned int
